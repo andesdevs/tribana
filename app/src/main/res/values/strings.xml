@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">APP NETS</string>
+    <string name="title_home">Ofertas Laborales</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Perfil de Usuario</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="default_web_client_id">1046298373013-fr89uv2qi0k303gp16rjpvogcf5mo4rt.apps.googleusercontent.com</string>
+
+    <string name="bienvenida_html"><![CDATA[
+    <p>Con tu cuenta <b>BÁSICA</b> puedes:</p>
+    <ul>
+  <li>Buscar y postularte a oportunidades locales</li>
+  <li>Crear tu perfil y mostrar hasta <b>5</b> habilidades</li>
+  <li>Recibir notificaciones de nuevas ofertas</li>
+    </ul>
+    <p><b>¿Quieres sacar el máximo provecho?</b><br/>
+    Pasa a <b>PREMIUM</b> y disfruta de:</p>
+    <ul>
+  <li>Postulaciones ilimitadas</li>
+  <li>Visibilidad destacada ante empleadores</li>
+  <li>Acceso prioritario a nuevas vacantes</li>
+  <li>Soporte y asesoría personalizada</li>
+    </ul>
+]]></string>
+
+    <string name="lorem_ipsum"></string>
+
+    <string name="ubicacion_placeholder">Ubicación: %s</string>
+    <string name="modalidad_placeholder">Modalidad: %s</string>
+    <string name="user_photo">Foto de usuario</string>
+    <string name="navigation_home">Inicio</string>
+    <string name="navigation_dashboard">Tu Cuenta</string>
+    <string name="navigation_notifications">Empleos</string>
+    <string name="red_de_apoyo">Red de Apoyo</string>
+
+
+</resources>

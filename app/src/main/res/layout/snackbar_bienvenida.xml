@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:alpha="0"
+    android:background="@drawable/bg_snackbar"
+    android:elevation="8dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Ícono de bienvenida -->
+    <ImageView
+        android:id="@+id/imgWelcomeIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Bienvenido"
+        android:src="@drawable/ic_welcome" />
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/txtWelcomeMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:text="¡Bienvenido! Para continuar, completa tu perfil."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Botón para completar perfil -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCompletarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="Completar perfil"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple_500" />
+</LinearLayout>

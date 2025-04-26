@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1) Imagen de fondo -->
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_bienvenida2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 2) Scrim negro semitransparente para mejorar contraste -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 3) Logo -->
+    <ImageView
+        android:id="@+id/ivSplashLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 4) Saludo -->
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="¡Hola👋"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        app:layout_constraintTop_toBottomOf="@id/ivSplashLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 5) Scroll con animación -->
+    <ScrollView
+        android:id="@+id/scrollBienvenida"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/tvGreeting"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpgrade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llBienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutAnimation="@anim/layout_fall_down">
+
+            <TextView
+                style="@style/BienvenidaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Con tu cuenta BÁSICA puedes:" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Buscar y postularte a oportunidades locales" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Crear tu perfil y mostrar hasta 5 habilidades" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Recibir notificaciones de nuevas ofertas" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                style="@style/BienvenidaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="¿Quieres sacar el máximo provecho?" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Postulaciones ilimitadas" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Visibilidad destacada ante empleadores" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Acceso prioritario a nuevas vacantes" />
+
+            <TextView
+                style="@style/BienvenidaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="• Soporte y asesoría personalizada" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 6) Botón “Pasa a PREMIUM” -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpgrade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="PASA A PREMIUM"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryColor"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="50dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/primaryColor"
+        app:layout_constraintBottom_toTopOf="@id/btnContinuar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 7) Botón “Continuar” -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinuar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Continuar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

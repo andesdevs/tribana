@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFB6B3</color> <!-- Rosa claro -->
+    <color name="purple_500">#FF5722</color> <!-- Naranja vibrante -->
+    <color name="purple_700">#B8A89E</color> <!-- Beige suave -->
+    <color name="teal_200">#DAF4F4</color> <!-- Azul cielo claro -->
+    <color name="green">#4CAF50</color> <!-- Verde sin cambios -->
+    <color name="teal_700">#1F2D41</color> <!-- Azul marino oscuro -->
+    <color name="black">#212121</color> <!-- Negro suave -->
+    <color name="white">#FFFFFF</color> <!-- Blanco puro -->
+    <color name="primaryColor">#FF5722</color> <!-- Naranja vibrante como color primario -->
+    <color name="chipBackground">#3F51B5</color> <!-- Azul vibrante -->
+    <color name="text_primary">#4A4A4A</color> <!-- Gris oscuro para texto -->
+    <color name="background_light">#F5F5F5</color> <!-- Fondo claro -->
+    <color name="primaryColorDark">#1F2D41</color> <!-- Azul marino oscuro -->
+    <color name="snackbarBackgroundColor">#36435A</color> <!-- Azul marino profundo -->
+    <color name="red">#D32F2F</color> <!-- Rojo vibrante para errores -->
+    <color name="primary">#DAF4F4</color> <!-- Azul cielo claro -->
+    <color name="gray">#7D7C7A</color> <!-- Gris neutro -->
+    <color name="light_blue">#C8E7F8</color>
+    <color name="fondoPerfil">#AB7A7A</color>
+    <color name="colorDestacada">#FFFDE7</color> <!-- Amarillo pastel -->
+    <color name="blanco">#FFFFFF</color>
+    <color name="nav_bg">#FFF5F8</color>           <!-- fondo general -->
+    <color name="nav_item_active">#FFB3C6</color>  <!-- rosa pastel -->
+    <color name="nav_item_inactive">#A68F9E</color><!-- violeta grisáceo -->
+    <color name="nav_ripple">#66FFB3C6</color>     <!-- rosa pastel translúcido -->
+    <color name="bar_background">#FFF1F3</color>
+    <color name="brand_taupe">#C3BAAE</color>
+    <color name="brand_cream">#FFEFE0</color>
+    <color name="brand_peach">#FF856A</color>
+    <color name="brand_orange">#FF5221</color>
+    <color name="brand_cyan">#C9F0F7</color>
+    <color name="gray_350">#757575</color>           <!-- Gris para iconos no activos -->
+    <color name="navigation_shadow">#33000000</color>
+
+</resources>
+

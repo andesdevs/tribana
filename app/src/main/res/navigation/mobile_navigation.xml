@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_dashboard">
+
+    <!-- Fragment Home -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.cuatroraices.appnets.ui.home.HomeFragment"
+        android:label="Ofertas Laborales"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Fragment Dashboard -->
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.cuatroraices.appnets.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard_old" />
+
+    <!-- Fragment Notifications -->
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.cuatroraices.appnets.ui.notifications.NotificationsFragment"
+        android:label="Perfil de Usuario"
+        tools:layout="@layout/fragment_notifications" />
+
+    <!-- Fragment Red de Apoyo -->
+    <fragment
+        android:id="@+id/navigation_red_de_apoyo"
+        android:name="com.cuatroraices.appnets.ui.redapoyo.RedApoyoFragment"
+        android:label="Red de Apoyo"
+        tools:layout="@layout/fragment_red_de_apoyo" />
+
+    <!-- Acciones globales para navegación directa entre tabs -->
+    <action
+        android:id="@+id/action_global_navigation_home"
+        app:destination="@id/navigation_home" />
+
+    <action
+        android:id="@+id/action_global_navigation_dashboard"
+        app:destination="@id/navigation_dashboard" />
+
+    <action
+        android:id="@+id/action_global_navigation_notifications"
+        app:destination="@id/navigation_notifications" />
+
+    <action
+        android:id="@+id/action_global_navigation_red_de_apoyo"
+        app:destination="@id/navigation_red_de_apoyo" />
+</navigation>

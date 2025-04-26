@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1046298373013",
+    "project_id": "cuatro-raices-app",
+    "storage_bucket": "cuatro-raices-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046298373013:android:2c996755de3fdcc92c249c",
+        "android_client_info": {
+          "package_name": "com.cuatroraices.appnets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046298373013-fr89uv2qi0k303gp16rjpvogcf5mo4rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cuatroraices.appnets",
+            "certificate_hash": "fc14d13da340f8a3526d0be68c1294b4f4f53b2f"
+          }
+        },
+        {
+          "client_id": "1046298373013-32k00ua3ino3gh43oevinfge78js66gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD5SJopBxsBG4z_u0E5x8jwycLSRMD4lM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046298373013-32k00ua3ino3gh43oevinfge78js66gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

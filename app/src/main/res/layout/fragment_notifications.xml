@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- 📌 Nombre -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre Completo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 📌 Dirección -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 📌 Teléfono -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 📌 Ciudad -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 📌 Etiquetas -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Etiquetas (separadas por comas)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <!--<com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEtiquetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Añadir Etiqueta"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <!-- Campo para añadir etiquetas -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Añadir Etiqueta"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etEtiquetas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Grupo de Chips donde se mostrarán las etiquetas -->
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupEtiquetas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleLine="false"
+                    app:chipSpacing="8dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 📸 Imagen de Cédula de Identidad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cédula de Identidad"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgCedula"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user_placeholder"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubirCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir Cédula de Identidad"
+            app:cornerRadius="25dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 📸 Imagen de Carnet de Cuidadora -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carnet de Cuidadora"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imgCuidadora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user_placeholder"/>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubirCuidadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir Carnet de Cuidadora"
+            app:cornerRadius="25dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 💾 Botón Guardar Cambios -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardarCambios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3A7A87"
+            android:text="Guardar Cambios"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="25dp" />
+    </LinearLayout>
+</ScrollView>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            &lt;!&ndash; Nombre &ndash;&gt;
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:inputType="textPersonName"/>
+
+            &lt;!&ndash; Dirección &ndash;&gt;
+            <EditText
+                android:id="@+id/etDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dirección"
+                android:inputType="textPostalAddress"/>
+
+            &lt;!&ndash; Teléfono &ndash;&gt;
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono"
+                android:inputType="phone"/>
+
+            &lt;!&ndash; Ciudad &ndash;&gt;
+            <EditText
+                android:id="@+id/etCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ciudad"
+                android:inputType="text"/>
+
+            &lt;!&ndash; Etiquetas &ndash;&gt;
+            <EditText
+                android:id="@+id/etEtiquetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Etiquetas (separadas por comas)"
+                android:inputType="text"/>
+
+            &lt;!&ndash; Imagen de Cédula de Identidad &ndash;&gt;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cédula de Identidad"/>
+
+            <ImageView
+                android:id="@+id/imgCedula"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user_placeholder"/>
+
+            <Button
+                android:id="@+id/btnSubirCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subir Cédula de Identidad"/>
+
+            &lt;!&ndash; Imagen de Carnet de Cuidadora &ndash;&gt;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carnet de Cuidadora"/>
+
+            <ImageView
+                android:id="@+id/imgCuidadora"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user_placeholder"/>
+
+            <Button
+                android:id="@+id/btnSubirCuidadora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subir Carnet de Cuidadora"/>
+
+            &lt;!&ndash; Botón Guardar Cambios &ndash;&gt;
+            <Button
+                android:id="@+id/btnGuardarCambios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Cambios"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>-->

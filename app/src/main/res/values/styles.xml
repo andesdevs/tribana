@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para los chips -->
+    <style name="ChipTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <!-- Estilo global para la app (opcional) -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BienvenidaTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">@font/hostgrotesk</item>
+    </style>
+    <style name="BienvenidaItem">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:fontFamily">@font/hostgrotesk</item>
+    </style>
+    <style name="NavBarTextActive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NavBarTextInactive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>
